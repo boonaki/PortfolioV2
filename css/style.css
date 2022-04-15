@@ -1,0 +1,531 @@
+@import url("fontawesome-all.min.css");
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+
+.icon {
+  text-decoration: none;
+  border-bottom: none;
+  position: relative;
+  color: #F2F3D9;
+}
+
+  .icon:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    text-transform: none !important;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400;
+  }
+
+  .icon > .label {
+    display: none;
+  }
+
+  .icon:before {
+    line-height: inherit;
+  }
+
+  .icon.solid:before {
+    font-weight: 900;
+  }
+
+  .icon.brands:before {
+    font-family: 'Font Awesome 5 Brands';
+  }
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+main, body{
+  background: #F2F3D9;
+  height: 100%;
+}
+#hero{
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to bottom left, #011968, #0c285c, #0d3166, #234c81, #4374a1, #dac074);
+  color: #F2F3D9;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+}
+h1{
+  font-family: 'Mulish', 'sans-serif';
+  font-weight: 800;
+  font-size: 4.5rem;
+  margin: 2% 0 5% 0;
+  padding-left: 5%;
+  text-align: left;
+  word-spacing: -5px;
+}
+h2{
+  font-size: 32px;
+  width: 100%;
+  font-family: 'Mulish', 'sans-serif';
+  text-align: left;
+  padding: 0 0 2% 5%;
+  margin-bottom: 3%;
+  
+}
+
+.mainBox{
+  text-align: center;
+  background: rgba(0, 0, 0, 0.466);
+  width: 45%;
+  /* height: 60vh; */
+  border-radius: 20px;
+  padding: 0 2%;
+  display: flex;
+  flex-direction: row;
+  
+}
+#mainBoxText{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#mainBoxText h2{
+  font-size: 28px;
+}
+.mainBox ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 5%;
+}
+.mainBox ul li{
+  list-style: none;
+}
+.mainBox ul a{
+  font-size: 50px;
+}
+a{
+  text-decoration: none;
+}
+#hero span, p{
+  color: #dac074;
+  font-size: 25px;
+  font-family: 'Raleway', 'sans-serif';
+  font-weight: 300;
+  font-style: italic;
+}
+#hero p{
+  padding: 0 25% 0 5%;
+  text-align: left;
+  line-height: 40px;
+}
+.mainButtons{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 8%;
+}
+.mainButtons a{
+  /* color: #D9AF30; */
+  color: #dac074;
+  width: 40%;
+  padding: 3%;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: 'Raleway', sans-serif;
+  background: #151d2c;
+  border: 1px solid #dac074;
+  border-radius: 10px;
+  transition-property: background, color;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+.mainButtons a:hover{
+  background: #dac074;
+  color: black;
+}
+
+
+#myProjects{
+  height: 100vh;
+  width: 100%;
+  background: #151f30;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 3%;
+}
+#recentProjects{
+  width: 60%;
+  padding: 0 5%;
+  display: flex;
+  flex-direction: column;
+}
+#recentProjects > * > .project{
+  margin: 1% 0;
+  padding: 25px 2%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #1b304a;
+  border: 1px solid #dac074;
+  border-radius: 5px;
+  transition-property: background;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+#recentProjects > * > .project:hover{
+  background: #dac074;
+}
+.projectP{
+  color: #F2F3D9;
+  font-size: 20px
+}
+
+#myProjects h2{
+  margin: 0;
+  padding-bottom: 0;
+  color: #F2F3D9;
+}
+#recentProjects img{
+  height: 200px;
+  width: 200px;
+}
+#recentProjects div{
+  padding-left: 5%;
+ 
+  /* color: #F2F3D9; */
+}
+h3, h4{
+  color: #F2F3D9;
+  font-size: 25px;
+  font-family: 'Mulish', 'sans-serif';
+}
+
+video{
+  height: 400px;
+  width: 100%;
+}
+
+
+#passionProject{
+  width: 40%;
+  background: #1b304a;
+  border: 1px solid #dac074;
+  border-radius: 5px;
+  padding: 0 3%;
+}
+#description h3{
+  font-size: 36px;
+}
+#description > *{
+  margin: 2% 0;
+}
+#description p{
+  font-size: 15px
+}
+h4{
+  border-bottom: 1px solid #dac074;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+#description ul > li{
+  color: #dac074;
+  font-size: 15px;
+  font-family: 'Mulish', 'sans-serif';
+  margin: 2%;
+}
+
+#myServicesPage{
+  width: 100%;
+  height: 100vh;
+  background: #151f30;
+  padding: 3%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+#myServices{
+  width: 50%;
+  padding-left: 5%;
+}
+#myServices > *{
+  margin: 5% 0;
+  padding-bottom: 5%;
+  border-bottom: 1px solid #dac074;
+}
+#myServices p{
+  padding: 0 25% 0 0;
+  color: #F2F3D9;
+  font-family: 'Mulish', 'sans-serif';
+  font-style: normal;
+  font-size: 20px;
+}
+#myServicesPage h2{
+  padding-bottom: 0;
+  margin-bottom: 0;
+  color: #F2F3D9;
+}
+#myServicesPage h3{
+  margin-bottom: 2%;
+  color: #dac074;
+}
+
+#services{
+  /* height: 100vh; */
+  width: 100%;
+  padding: 3%;
+  background: #151f30;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+}
+#servicesBox{
+  width: 70%;
+  padding: 0 5% 5% 5%;
+}
+#servicesBox h2{
+  color: #F2F3D9;
+}
+#servicesBox > *{
+  margin-bottom: 5%;
+}
+#servicesBox > section{
+  background: #1b304a;
+  border: 1px solid #dac074;
+  border-radius: 5px;
+}
+#servicesBox > section div{
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid #dac074;
+  
+  padding: 3% 3%;
+}
+#servicesBox > section p{
+  font-style: normal;
+  font-family: 'Mulish', sans-serif;
+  font-size: 20px;
+  width: 60%;
+  color: #F2F3D9;
+  padding-right: 5%;
+}
+h5{
+  font-size: 28px;
+  color: #F2F3D9;
+  font-family: 'Mulish', sans-serif;
+}
+#servicesBox > section span{
+  font-size: 40px;
+  color: #dac074;
+}
+/* #contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#contact a{
+  color: #F2F3D9;
+  font-size: 25px;
+  background: #1b304a;
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  padding: 2% 5%;
+  border: 1.5px solid #dac074;
+  border-radius: 5px;
+  transition-property: background;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+#contact a:hover{
+  background: #dac074;
+}
+#contact span{
+  width: 100%;
+} */
+
+
+#contactPage{
+  width: 100%;
+  height: 80vh;
+  background: linear-gradient(to bottom left, rgb(20, 49, 143), #4374a1, #dac074);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3%;
+}
+#about, #contact{
+  width: 40%;
+  height: 50vh;
+  background: rgba(0, 0, 0, 0.466);
+  padding: 3%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  border-radius: 15px;
+}
+#contactPage h2{
+  color: #dac074;
+  padding: 0;
+  margin: 0;
+}
+
+
+#about{
+  width: 40%;
+  height: 50vh;
+  text-align: center;
+  justify-content: center;
+}
+#about > *{
+  margin: 5% 0;
+  text-align: center;
+}
+#headShot{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 1px solid #F2F3D9;
+}
+#contactPage p{
+  font-family: 'Mulish', sans-serif;
+  color: #F2F3D9;
+  font-style: normal;
+  font-size: 20px;
+}
+
+#contact > *{
+ margin: 3% 0;
+}
+#contactDiv{
+  width: 100%;
+}
+#contactForm{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+#contactForm > *{
+  width: 30%;
+  border: 1px solid #151d2c;
+  margin: 1% 1%;
+  padding: 10px 15px;
+  background: #F2F3D9;
+  border-radius: 5px;
+  
+}
+#contactForm > * > *{
+  color: #151d2c;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+#nameDiv{
+  
+}
+#emailDiv{
+  
+}
+#messageDiv{
+  width: 100%;
+  padding: 10px 0 0 15px;
+}
+#messageDiv > *{
+  box-sizing: content-box;
+  width: 100%;
+  height: 100%;
+  
+}
+/* #submitDiv{
+  display: flex;
+  justify-content: center;
+  background: #151d2c;
+  border: 1px solid #dac074; 
+}*/
+#contactForm > input{
+  color: #F2F3D9;
+  background: #151d2c;
+  border: 1px solid #dac074;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  transition-property: background, color;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+#contactForm > input:hover{
+  background: #dac074;
+  color: #151d2c;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+
+footer {
+  background: #151d2c;
+  color: #F2F3D9;
+  font-family: 'Mulish', sans-serif;
+  width: 100%;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+footer section{
+  height: 100%;
+  padding: 2% 0;
+}
+footer span{
+  width: 100%;
+  text-align: center;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+#animContainer{
+  height: 300px;
+  width: 300px;
+  position: relative;
+}
+#myServicesAnim{
+  height: 400px;
+  width: 40%;
+  margin-top: 150px;
+  margin-left: 100px;
+  position: relative;
+}
