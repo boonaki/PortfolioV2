@@ -265,7 +265,7 @@ h4{
 
 #myServicesPage{
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   background: #151f30;
   padding: 3%;
   display: flex;
@@ -288,6 +288,7 @@ h4{
   font-family: 'Mulish', 'sans-serif';
   font-style: normal;
   font-size: 20px;
+  line-height: 35px;
 }
 #myServicesPage h2{
   padding-bottom: 0;
@@ -299,6 +300,39 @@ h4{
   color: #dac074;
 }
 
+#services{
+  padding: 0 15% 10% 15%;
+  background: #151f30;
+  font-family: 'Mulish', sans-serif;
+  font-style: normal;
+}
+h5{
+  color: #F2F3D9;
+  font-size: 35px;
+  padding: 1% 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#services span{
+  margin-right: 20px;
+}
+#services p{
+  font-family: 'Mulish', sans-serif;
+  font-style: normal;
+  border-bottom: 1px solid #F2F3D9;
+  padding: 0 15% 5% 15%;
+  margin-bottom: 2%;
+  text-align: center;
+}
+#servicesBox{
+  line-height: 50px;
+}
+#servicesBox h2{
+  margin: 0 0 5% 0;
+  padding: 0;
+  color: #F2F3D9;
+}
 /*#services{
   width: 100%;
   padding: 3%;
