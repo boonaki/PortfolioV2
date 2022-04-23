@@ -89,10 +89,11 @@ main, body{
 h1{
   font-family: 'Mulish', 'sans-serif';
   font-weight: 800;
-  font-size: 4.5rem;
-  margin: 2% 0 5% 0;
+  font-size: 6.5rem;
+  /* margin: 2% 0 5% 0; */
   padding-left: 5%;
-  /* text-align: left; */
+  padding-right: 10%;
+  text-align: left;
   word-spacing: -5px;
 }
 h2{
@@ -109,7 +110,6 @@ h2{
   text-align: center;
   background: rgba(0, 0, 0, 0.466);
   width: 45%;
-  height: 60vh;
   border-radius: 20px;
   padding: 0 2%;
   display: flex;
@@ -120,9 +120,10 @@ h2{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
 }
 #mainBoxText h2{
-  font-size: 28px;
+  font-size: 3.0rem;
 }
 .mainBox ul{
   display: flex;
@@ -134,14 +135,14 @@ h2{
   list-style: none;
 }
 .mainBox ul a{
-  font-size: 50px;
+  font-size: 5.0rem;
 }
 a{
   text-decoration: none;
 }
 #hero span, p{
   color: #dac074;
-  font-size: 25px;
+  font-size: 2.5rem;
   font-family: 'Raleway', 'sans-serif';
   font-weight: 300;
   font-style: italic;
@@ -162,7 +163,7 @@ a{
   color: #dac074;
   width: 40%;
   padding: 3%;
-  font-size: 20px;
+  font-size: 2.0rem;
   font-weight: 300;
   font-family: 'Raleway', sans-serif;
   background: #151d2c;
@@ -211,7 +212,7 @@ a{
 }
 .projectP{
   color: #F2F3D9;
-  font-size: 20px
+  font-size: 2.0rem;
 }
 
 #myProjects h2{
@@ -230,7 +231,7 @@ a{
 }
 h3, h4{
   color: #F2F3D9;
-  font-size: 25px;
+  font-size: 2.5rem;
   font-family: 'Mulish', 'sans-serif';
 }
 
@@ -248,13 +249,13 @@ video{
   padding: 0 3%;
 }
 #description h3{
-  font-size: 36px;
+  font-size: 3.6rem;
 }
 #description > *{
   margin: 2% 0;
 }
 #description p{
-  font-size: 15px
+  font-size: 1.5rem;
 }
 h4{
   border-bottom: 1px solid #dac074;
@@ -263,7 +264,7 @@ h4{
 }
 #description ul > li{
   color: #dac074;
-  font-size: 15px;
+  font-size: 1.5rem;
   font-family: 'Mulish', 'sans-serif';
   margin: 2%;
 }
@@ -292,7 +293,7 @@ h4{
   color: #F2F3D9;
   font-family: 'Mulish', 'sans-serif';
   font-style: normal;
-  font-size: 20px;
+  font-size: 2.0rem;
   line-height: 35px;
 }
 #myServicesPage h2{
@@ -313,7 +314,7 @@ h4{
 }
 h5{
   color: #F2F3D9;
-  font-size: 35px;
+  font-size: 3.5rem;
   padding: 1% 2%;
   display: flex;
   justify-content: center;
@@ -338,81 +339,6 @@ h5{
   padding: 0;
   color: #F2F3D9;
 }
-/*#services{
-  width: 100%;
-  padding: 3%;
-  background: #151f30;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: flex-start;
-}
-#servicesBox{
-  width: 70%;
-  padding: 0 5% 5% 5%;
-}
-#servicesBox h2{
-  color: #F2F3D9;
-}
-#servicesBox > *{
-  margin-bottom: 5%;
-}
-#servicesBox > section{
-  background: #1b304a;
-  border: 1px solid #dac074;
-  border-radius: 5px;
-}
-#servicesBox > section div{
-  display: flex;
-  justify-content: space-around;
-  border: 1px solid #dac074;
-  
-  padding: 3% 3%;
-}
-#servicesBox > section p{
-  font-style: normal;
-  font-family: 'Mulish', sans-serif;
-  font-size: 20px;
-  width: 60%;
-  color: #F2F3D9;
-  padding-right: 5%;
-}
-h5{
-  font-size: 28px;
-  color: #F2F3D9;
-  font-family: 'Mulish', sans-serif;
-}
-#servicesBox > section span{
-  font-size: 40px;
-  color: #dac074;
-} */
-/* #contact{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-#contact a{
-  color: #F2F3D9;
-  font-size: 25px;
-  background: #1b304a;
-  font-family: 'Raleway', sans-serif;
-  font-style: italic;
-  font-weight: 300;
-  padding: 2% 5%;
-  border: 1.5px solid #dac074;
-  border-radius: 5px;
-  transition-property: background;
-  transition-duration: 0.2s;
-  transition-timing-function: linear;
-}
-#contact a:hover{
-  background: #dac074;
-}
-#contact span{
-  width: 100%;
-} */
-
 
 #contactPage{
   width: 100%;
@@ -425,7 +351,7 @@ h5{
 }
 #about, #contact{
   width: 40%;
-  height: 50vh;
+  
   background: rgba(0, 0, 0, 0.466);
   padding: 3%;
   display: flex;
@@ -437,6 +363,9 @@ h5{
   color: #dac074;
   padding: 0;
   margin: 0;
+}
+#contact h2{
+  font-size: 4.0rem;
 }
 
 
@@ -460,7 +389,7 @@ h5{
   font-family: 'Mulish', sans-serif;
   color: #F2F3D9;
   font-style: normal;
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 #contact > *{
@@ -488,13 +417,9 @@ h5{
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
   font-style: italic;
+  font-size: 2.0rem;
 }
-#nameDiv{
-  
-}
-#emailDiv{
-  
-}
+
 #messageDiv{
   width: 100%;
   padding: 10px 0 0 15px;
@@ -503,21 +428,18 @@ h5{
   box-sizing: content-box;
   width: 100%;
   height: 100%;
-  
 }
-/* #submitDiv{
-  display: flex;
-  justify-content: center;
-  background: #151d2c;
-  border: 1px solid #dac074; 
-}*/
+textarea{
+  width: auto;
+}
 #contactForm > input{
-  color: #F2F3D9;
+  color: #dac074;
   background: #151d2c;
   border: 1px solid #dac074;
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
   font-style: italic;
+  font-size: 1.5rem;
   transition-property: background, color;
   transition-duration: 0.2s;
   transition-timing-function: linear;
@@ -540,7 +462,7 @@ footer {
   color: #F2F3D9;
   font-family: 'Mulish', sans-serif;
   width: 100%;
-  font-size: 20px;
+  font-size: 2.0rem;
   display: flex;
   justify-content: center;
 }
