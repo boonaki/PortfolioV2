@@ -1,3 +1,5 @@
+/*added this to test, remove if applied*/
+
 @import url("fontawesome-all.min.css");
 
 /* Box Model Hack */
@@ -7,7 +9,6 @@
   padding: 0;
   border: 0;
   outline: 0;
-  font-size: 100%;
   vertical-align: baseline;
   background: transparent;
 }
@@ -63,6 +64,10 @@
     font-family: 'Font Awesome 5 Brands';
   }
 
+
+html{
+  font-size: 62.5%;
+}
 /******************************************
 /* BASE STYLES
 /*******************************************/
@@ -87,11 +92,11 @@ h1{
   font-size: 4.5rem;
   margin: 2% 0 5% 0;
   padding-left: 5%;
-  text-align: left;
+  /* text-align: left; */
   word-spacing: -5px;
 }
 h2{
-  font-size: 32px;
+  font-size: 3.2rem;
   width: 100%;
   font-family: 'Mulish', 'sans-serif';
   text-align: left;
@@ -104,7 +109,7 @@ h2{
   text-align: center;
   background: rgba(0, 0, 0, 0.466);
   width: 45%;
-  /* height: 60vh; */
+  height: 60vh;
   border-radius: 20px;
   padding: 0 2%;
   display: flex;
