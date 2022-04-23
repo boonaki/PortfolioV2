@@ -63,7 +63,12 @@
   .icon.brands:before {
     font-family: 'Font Awesome 5 Brands';
   }
-
+#hero .icon{
+  transition: color 0.1s linear;
+}
+#hero .icon:hover{
+  color: #dac074;
+}
 
 html{
   font-size: 62.5%;
@@ -169,9 +174,9 @@ a{
   background: #151d2c;
   border: 1px solid #dac074;
   border-radius: 10px;
-  transition-property: background, color;
-  transition-duration: 0.2s;
-  transition-timing-function: linear;
+}
+#contactForm > input, .mainButtons a{
+  transition: background 0.2s linear, color 0.2s linear;
 }
 .mainButtons a:hover{
   background: #dac074;
@@ -203,9 +208,7 @@ a{
   background: #1b304a;
   border: 1px solid #dac074;
   border-radius: 5px;
-  transition-property: background;
-  transition-duration: 0.2s;
-  transition-timing-function: linear;
+  transition: background 0.2s linear;
 }
 #recentProjects > * > .project:hover{
   background: #dac074;
@@ -440,9 +443,6 @@ textarea{
   font-weight: 300;
   font-style: italic;
   font-size: 1.5rem;
-  transition-property: background, color;
-  transition-duration: 0.2s;
-  transition-timing-function: linear;
 }
 #contactForm > input:hover{
   background: #dac074;
