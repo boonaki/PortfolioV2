@@ -669,14 +669,29 @@ footer span{
   }
 }
 @media screen and (max-width: 375px){
-  .mainBox p{
-    display: none;
+  h1{
+    margin-bottom: 10px;
+  }
+  .mainBox #mainBoxText p{
+    font-size: 1.9rem;
+    line-height: 20px;
+    text-align: center;
   }
   .mainBox{
-    margin-top: 45%;
+    margin-top: 30%;
+    height: 50%;
   }
   .projectP{
     display: none;
+  }
+}
+@media screen and (max-height: 600px) {
+  #hero{
+    height: 100%;
+    padding-bottom: 5%;
+  }
+  .mainBox #mainBoxText p{
+    font-size: 2.0rem
   }
 }
 
