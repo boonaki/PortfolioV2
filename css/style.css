@@ -204,7 +204,7 @@ a{
   justify-content: flex-start;
 }
 #projectButton{
-  color: #F2F3D9;
+  /* color: #F2F3D9;
   background: #1b304a;
   margin-top: 20px;
   margin-left: 5%;
@@ -213,7 +213,8 @@ a{
   font-size: 2.0rem;
   border: 1px solid #dac074;
   border-radius: 5px;
-  font-family: 'Mulish', 'sans-serif';
+  font-family: 'Mulish', 'sans-serif'; */
+  display: none;
 }
 #recentProjects{
   width: 60%;
@@ -491,10 +492,6 @@ footer span{
   text-align: center;
 }
 
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
-
 #animContainer{
   height: 300px;
   width: 300px;
@@ -507,6 +504,12 @@ footer span{
   margin-left: 100px;
   position: relative;
 }
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
 @media screen and (max-height: 1000px) {
   #animContainer{
     position: absolute;
@@ -588,7 +591,7 @@ footer span{
     float: left;
     text-align: center;
     margin: 5% 5%;
-    height: 45%;
+    height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -600,10 +603,10 @@ footer span{
     margin-top: 0;
     margin-left: 0;
   }
-  #projectButton{
+  /* #projectButton{
     width: 100%;
     text-align: center;
-  }
+  } */
   footer{
     font-size: 1.7rem;
   }
@@ -627,7 +630,7 @@ footer span{
     font-size: 50%;
   }
   #recentProjects img{
-    height: 150px;
+    height: 125px;
     width: 125px;
   }
   #services p{
@@ -656,6 +659,14 @@ footer span{
     position: relative;
     margin-top: 45%;
   }
+  .mainButtons{
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .mainButtons a{
+    width: 90%;
+    margin: 0 5% 25px 5%;
+  }
 }
 @media screen and (max-width: 375px){
   .mainBox p{
@@ -664,11 +675,9 @@ footer span{
   .mainBox{
     margin-top: 45%;
   }
-}
-
-
-@media screen and (max-height: 1400px){
-
+  .projectP{
+    display: none;
+  }
 }
 
 
