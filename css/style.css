@@ -69,6 +69,12 @@
 #hero .icon:hover{
   color: #dac074;
 }
+#projectButton, #recentProjects > * > .project{
+  transition: background 0.2s linear;
+}
+#projectButton:hover, #recentProjects > * > .project:hover{
+  background: #dac074;
+}
 
 html{
   font-size: 62.5%;
@@ -113,7 +119,7 @@ h2{
 
 .mainBox{
   text-align: center;
-  background: rgba(0, 0, 0, 0.466);
+  background: rgba(0, 0, 0, 0.582);
   width: 45%;
   border-radius: 20px;
   padding: 0 2%;
@@ -195,6 +201,19 @@ a{
   flex-wrap: wrap;
   align-content: flex-start;
   padding: 3%;
+  justify-content: flex-start;
+}
+#projectButton{
+  color: #F2F3D9;
+  background: #1b304a;
+  margin-top: 20px;
+  margin-left: 5%;
+  margin: 20px 5%;
+  padding: 1% 5%;
+  font-size: 2.0rem;
+  border: 1px solid #dac074;
+  border-radius: 5px;
+  font-family: 'Mulish', 'sans-serif';
 }
 #recentProjects{
   width: 60%;
@@ -211,7 +230,6 @@ a{
   background: #1b304a;
   border: 1px solid #dac074;
   border-radius: 5px;
-  transition: background 0.2s linear;
 }
 #recentProjects > * > .project:hover{
   background: #dac074;
@@ -320,7 +338,7 @@ h4{
 }
 h5{
   color: #F2F3D9;
-  font-size: 3.5rem;
+  font-size: 3.3rem;
   padding: 1% 2%;
   display: flex;
   justify-content: center;
@@ -376,7 +394,6 @@ h5{
 
 
 #about{
-  width: 40%;
   text-align: center;
   justify-content: center;
 }
@@ -452,7 +469,6 @@ textarea{
   color: #151d2c;
 }
 
-
 /******************************************
 /* LAYOUT
 /*******************************************/
@@ -494,7 +510,22 @@ footer span{
   margin-left: 100px;
   position: relative;
 }
-
+@media screen and (max-height: 1000px) {
+  #animContainer{
+    position: absolute;
+  }
+  .mainBox{
+    position: relative;
+    margin-top: 15%;
+  }
+  #myProjects{
+    height: 100%;
+  }
+  #contactPage{
+    height: 100%;
+    padding: 8% 3%;
+  }
+}
 @media screen and (max-width: 1580px){
   h1{
     padding-right: 0;
@@ -504,7 +535,7 @@ footer span{
 @media screen and (max-width: 1430px){
   
   .mainBox{
-    width: 45%;
+    width: 55%;
   }
   html{
     font-size: 58%;
@@ -521,6 +552,11 @@ footer span{
 @media screen and (max-width: 1085px) {
   .mainBox{
     width: 60%;
+    flex-direction: column;
+  }
+  .mainBox ul{
+    flex-direction: row;
+    margin-bottom: 5%;
   }
   h1{
     font-size: 5.0rem;
@@ -528,11 +564,16 @@ footer span{
   #about h2{
     font-size: 2.5rem;
   }
+  #myProjects{
+    height: 100%;
+  }
   #passionProject{
     display: none;
   }
   #recentProjects{
     width: 100%;
+    height: 80%;
+    justify-content: space-around;
   }
   #contactForm > *{
     width: 100%;
@@ -550,7 +591,10 @@ footer span{
     float: left;
     text-align: center;
     margin: 5% 5%;
-    height: 40%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   #myServices p{
     padding-right: 0;
@@ -558,6 +602,13 @@ footer span{
   #myServicesAnim{
     margin-top: 0;
     margin-left: 0;
+  }
+  #projectButton{
+    width: 100%;
+    text-align: center;
+  }
+  footer{
+    font-size: 1.7rem;
   }
 }
 @media screen and (max-width: 850px) {
@@ -567,18 +618,60 @@ footer span{
   .mainBox{
     width: 80%;
   }
-}
-@media screen and (max-height: 1000px) {
-  #hero{
-    height: 1000px;
+  #myServices p{
+    line-height: 30px;
   }
-  #myProjects{
-    height: 100%;
+  #services span{
+    margin-right: 8px;
+  }
+}
+@media screen and (max-width: 540px) {
+  html{
+    font-size: 50%;
+  }
+  #recentProjects img{
+    height: 150px;
+    width: 125px;
+  }
+  #services p{
+    padding: 0;
+    padding-bottom: 5%;
+  }
+  #myServicesAnim{
+    height: 115px;
+    margin-bottom: 10%;
   }
   #contactPage{
-    height: 100%;
-    padding: 8% 3%;
+    flex-direction: column;
   }
+  #contactPage > *{
+    width: 90%;
+    margin: 20px 0;
+    padding: 6%;
+  }
+  #servicesBox{
+    margin-bottom: 20%;
+  }
+  #animContainer{
+    position: absolute;
+  }
+  .mainBox{
+    position: relative;
+    margin-top: 45%;
+  }
+}
+@media screen and (max-width: 375px){
+  .mainBox p{
+    display: none;
+  }
+  .mainBox{
+    margin-top: 45%;
+  }
+}
+
+
+@media screen and (max-height: 1400px){
+
 }
 
 
