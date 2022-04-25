@@ -623,6 +623,9 @@ footer span{
   .mainBox{
     width: 80%;
   }
+  #myServices > *{
+    height: 205px;
+  }
   #myServices p{
     line-height: 30px;
   }
@@ -653,6 +656,9 @@ footer span{
     width: 90%;
     margin: 20px 0;
     padding: 6%;
+  }
+  #myServices > *{
+    height: 15%;
   }
   #servicesBox{
     margin-bottom: 20%;
