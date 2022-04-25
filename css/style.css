@@ -538,7 +538,14 @@ footer span{
 }
 
 @media screen and (max-width: 1430px){
-  
+  h5{
+    font-size: 3.0rem;
+    text-align: center;
+  }
+  #services p{
+    line-height: 30px;
+    font-size: 2.0rem;
+  }
   .mainBox{
     width: 55%;
   }
@@ -555,6 +562,7 @@ footer span{
   }
 }
 @media screen and (max-width: 1085px) {
+  
   .mainBox{
     width: 60%;
     flex-direction: column;
@@ -592,11 +600,9 @@ footer span{
     margin-top: 5%;
   }
   #myServices > *{
-    width: 40%;
-    float: left;
+    width: 100%;
     text-align: center;
-    margin: 5% 5%;
-    height: 350px;
+    /* height: 350px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -614,6 +620,7 @@ footer span{
   } */
   footer{
     font-size: 1.7rem;
+    height: 50px;
   }
 }
 @media screen and (max-width: 850px) {
@@ -622,9 +629,6 @@ footer span{
   }
   .mainBox{
     width: 80%;
-  }
-  #myServices > *{
-    height: 205px;
   }
   #myServices p{
     line-height: 30px;
@@ -635,7 +639,7 @@ footer span{
 }
 @media screen and (max-width: 540px) {
   html{
-    font-size: 50%;
+    font-size: 45%;
   }
   #recentProjects img{
     height: 125px;
@@ -651,14 +655,12 @@ footer span{
   }
   #contactPage{
     flex-direction: column;
+    height: 100%;
   }
   #contactPage > *{
     width: 90%;
     margin: 20px 0;
     padding: 6%;
-  }
-  #myServices > *{
-    height: 15%;
   }
   #servicesBox{
     margin-bottom: 20%;
@@ -678,9 +680,13 @@ footer span{
   .mainButtons a{
     width: 90%;
     margin: 0 5% 25px 5%;
+    font-size: 1.8rem;
   }
 }
 @media screen and (max-width: 375px){
+  html{
+    font-size: 43%;
+  }
   h1{
     margin-bottom: 10px;
   }
