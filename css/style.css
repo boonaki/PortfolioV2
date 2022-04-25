@@ -516,7 +516,7 @@ footer span{
   }
   .mainBox{
     position: relative;
-    margin-top: 15%;
+    margin-top: 10%;
   }
   #myProjects{
     height: 100%;
@@ -524,6 +524,11 @@ footer span{
   #contactPage{
     height: 100%;
     padding: 8% 3%;
+  }
+}
+@media screen and (max-height: 800px){
+  .mainBox{
+    margin-top: 5%;
   }
 }
 @media screen and (max-width: 1580px){
@@ -658,7 +663,7 @@ footer span{
   }
   .mainBox{
     position: relative;
-    margin-top: 45%;
+    margin-top: 125px;
   }
   .mainButtons{
     flex-direction: column;
@@ -685,13 +690,19 @@ footer span{
     display: none;
   }
 }
-@media screen and (max-height: 600px) {
+@media screen and (min-width: 900px) and (max-height: 700px) {
   #hero{
     height: 100%;
     padding-bottom: 5%;
   }
   .mainBox #mainBoxText p{
     font-size: 2.0rem
+  }
+}
+@media screen and (max-height: 600px){
+  #hero{
+    height: 100%;
+    padding-bottom: 5%;
   }
 }
 
