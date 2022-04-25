@@ -376,9 +376,8 @@ h5{
 }
 #about, #contact{
   width: 40%;
-  
   background: rgba(0, 0, 0, 0.466);
-  padding: 3%;
+  padding: 2%;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -403,10 +402,16 @@ h5{
   text-align: center;
 }
 #headShot{
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
   border-radius: 50%;
-  border: 1px solid #F2F3D9;
+  
+}
+#headShot img{
+  object-fit: contain;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
 }
 #contactPage p{
   font-family: 'Mulish', sans-serif;
