@@ -76,6 +76,10 @@
   background: #dac074;
 }
 
+.hidden{
+  display: none;
+}
+
 html{
   font-size: 62.5%;
 }
