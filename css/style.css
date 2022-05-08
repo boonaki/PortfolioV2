@@ -528,7 +528,7 @@ footer span{
   height: 450px;
   width: 450px;
   position: absolute;
-  top: -125px;
+  top: -105px;
 }
 #myServicesAnim{
   height: 400px;
@@ -542,7 +542,7 @@ footer span{
 /* ADDITIONAL STYLES
 /*******************************************/
 
-
+/*reponsiveness changes for height*/
 @media screen and (max-height: 1000px) {
   #animContainer{
     position: absolute;
@@ -564,6 +564,8 @@ footer span{
     margin-top: 5%;
   }
 }
+
+/*responsiveness changes for width*/
 @media screen and (max-width: 1580px){
   h1{
     padding-right: 0;
@@ -621,6 +623,18 @@ footer span{
     height: 80%;
     justify-content: space-around;
   }
+  #about{
+    flex-direction: column-reverse;
+  }
+  #aboutText{
+    padding-left: 0;
+  }
+  #headshotPic{
+    margin-top: 50px;
+    height: 300px;
+    width: 300px;
+  }
+
   #contactForm > *{
     width: 100%;
   }
