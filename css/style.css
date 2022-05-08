@@ -111,10 +111,8 @@ h2{
   font-size: 3.2rem;
   width: 100%;
   font-family: 'Mulish', 'sans-serif';
-  text-align: left;
-  padding: 0 0 2% 5%;
+  padding: 0 0 2% 0;
   margin-bottom: 3%;
-  
 }
 
 .mainBox{
@@ -132,6 +130,7 @@ h2{
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  text-align: left;
 }
 #mainBoxText h2{
   font-size: 3.0rem;
@@ -160,7 +159,7 @@ a{
 }
 #hero p{
   padding: 0 25% 0 5%;
-  text-align: left;
+  /* text-align: left; */
   line-height: 40px;
 }
 .mainButtons{
@@ -192,15 +191,59 @@ a{
   color: black;
 }
 
+#aboutMe{
+  padding: 50px 5% 5% 5%;
+  background: #151f30;
+  /* margin-bottom: 20px; */
+}
+
+#about{
+  padding: 0 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+#headshot{
+  /* padding: 5% 0; */
+}
+#headshotPic{
+  object-fit: cover;
+  height: 400px;
+  width: 400px;
+  border: #dac074 solid 1px;
+  border-radius: 10px;
+}
+#aboutText{
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+}
+#aboutText p{
+  font-family: 'Mulish', sans-serif;
+  font-style: normal;
+  text-align: center;
+  font-size: 2.0rem;
+  padding: 10px 0;
+}
+#aboutMe h2, #aboutText h3{
+  margin-bottom: 0;
+  color: #F2F3D9;
+}
+#aboutText h3{
+  font-size: 2.8rem;
+  text-align: center;
+}
+
 
 #myProjects{
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
   background: #151f30;
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
-  padding: 3%;
+  padding: 0 5%;
   justify-content: flex-start;
 }
 #projectButton{
@@ -218,7 +261,7 @@ a{
 }
 #recentProjects{
   width: 60%;
-  padding: 0 5%;
+  padding-right: 5%;
   display: flex;
   flex-direction: column;
 }
@@ -325,6 +368,7 @@ h4{
   padding-bottom: 0;
   margin-bottom: 0;
   color: #F2F3D9;
+  margin-left: 5%;
 }
 #myServicesPage h3{
   margin-bottom: 2%;
@@ -332,7 +376,7 @@ h4{
 }
 
 #services{
-  padding: 0 5% 10% 5%;
+  padding: 0 15% 50px 15%;
   background: #151f30;
   font-family: 'Mulish', sans-serif;
   font-style: normal;
@@ -351,9 +395,9 @@ h5{
 #services p{
   font-family: 'Mulish', sans-serif;
   font-style: normal;
-  border-bottom: 1px solid #F2F3D9;
-  padding: 0 15% 5% 15%;
-  margin-bottom: 2%;
+  /* border-bottom: 1px solid #F2F3D9; */
+  padding: 0 15% 30px 15%;
+  /* margin-bottom: 2%; */
   text-align: center;
 }
 #servicesBox{
@@ -369,17 +413,16 @@ h5{
 
 #contactPage{
   width: 100%;
-  height: 80vh;
   background: linear-gradient(to bottom left, rgb(20, 49, 143), #4374a1, #dac074);
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 3%;
+  padding: 5%;
 }
-#about, #contact{
-  width: 40%;
+#contact{
+  width: 60%;
   background: rgba(0, 0, 0, 0.466);
-  padding: 2%;
+  padding: 3% 5%;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -394,37 +437,17 @@ h5{
   font-size: 4.0rem;
 }
 
-
-#about{
-  text-align: center;
-  justify-content: center;
-}
-#about > *{
-  margin: 5% 0;
-  text-align: center;
-}
-#headShot{
-  height: 250px;
-  width: 250px;
-  border-radius: 50%;
-  
-}
-#headShot img{
-  object-fit: contain;
-  height: 250px;
-  width: 250px;
-  border-radius: 50%;
-}
 #contactPage p{
   font-family: 'Mulish', sans-serif;
   color: #F2F3D9;
   font-style: normal;
   font-size: 2rem;
+  margin: 10px 0;
 }
 
-#contact > *{
+/* #contact > *{
  margin: 3% 0;
-}
+} */
 #contactDiv{
   width: 100%;
 }
