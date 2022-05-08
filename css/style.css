@@ -212,8 +212,8 @@ a{
   object-fit: cover;
   height: 400px;
   width: 400px;
-  border: #dac074 solid 1px;
-  border-radius: 10px;
+  border: #dac074 solid 2px;
+  border-radius: 200px;
 }
 #aboutText{
   padding-left: 5%;
@@ -274,7 +274,7 @@ a{
   flex-direction: row;
   align-items: center;
   background: #1b304a;
-  border: 1px solid #dac074;
+  border: 2px solid #dac074;
   border-radius: 5px;
 }
 #recentProjects > * > .project:hover{
@@ -314,7 +314,7 @@ video{
 #passionProject{
   width: 40%;
   background: #1b304a;
-  border: 1px solid #dac074;
+  border: 2px solid #dac074;
   border-radius: 5px;
   padding: 0 3%;
 }
