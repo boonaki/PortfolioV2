@@ -625,6 +625,7 @@ footer span{
   }
   #about{
     flex-direction: column-reverse;
+    padding: 15px 0;
   }
   #aboutText{
     padding-left: 0;
