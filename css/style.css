@@ -94,7 +94,7 @@ main, body{
   display: flex;
   flex-direction: column;
   align-content: center;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 h1{
@@ -123,7 +123,8 @@ h2{
   padding: 0 2%;
   display: flex;
   flex-direction: row;
-  
+  z-index: 1;
+  margin-top: 100px;
 }
 #mainBoxText{
   display: flex;
@@ -523,9 +524,10 @@ footer span{
 }
 
 #animContainer{
-  height: 300px;
-  width: 300px;
-  position: relative;
+  height: 450px;
+  width: 450px;
+  position: absolute;
+  top: -125px;
 }
 #myServicesAnim{
   height: 400px;
@@ -696,7 +698,8 @@ footer span{
     margin-bottom: 20%;
   }
   #animContainer{
-    position: absolute;
+    width: 300px;
+    height: 300px;
     top: -5%;
   }
   .mainBox{
