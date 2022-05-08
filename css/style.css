@@ -209,9 +209,6 @@ a{
   flex-direction: row;
   align-items: center;
 }
-#headshot{
-  /* padding: 5% 0; */
-}
 #headshotPic{
   object-fit: cover;
   height: 400px;
