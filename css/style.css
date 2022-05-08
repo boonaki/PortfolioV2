@@ -194,7 +194,7 @@ a{
 }
 
 #aboutMe{
-  padding: 50px 5% 5% 5%;
+  padding: 50px 5% 0 5%;
   background: #151f30;
   /* margin-bottom: 20px; */
 }
@@ -224,7 +224,7 @@ a{
   font-family: 'Mulish', sans-serif;
   font-style: normal;
   text-align: center;
-  font-size: 2.0rem;
+  font-size: 2.2rem;
   padding: 10px 0;
 }
 #aboutMe h2, #aboutText h3{
@@ -232,8 +232,9 @@ a{
   color: #F2F3D9;
 }
 #aboutText h3{
-  font-size: 2.8rem;
+  font-size: 3.5rem;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 
@@ -244,7 +245,7 @@ a{
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
-  padding: 0 5%;
+  padding: 3% 5% 0 5%;
   justify-content: flex-start;
 }
 #projectButton{
