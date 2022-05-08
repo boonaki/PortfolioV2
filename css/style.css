@@ -134,6 +134,7 @@ h2{
 }
 #mainBoxText h2{
   font-size: 3.0rem;
+  padding-left: 5%;
 }
 .mainBox ul{
   display: flex;
@@ -201,7 +202,6 @@ a{
   padding: 0 50px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
 }
 #headshot{
@@ -341,7 +341,7 @@ h4{
   width: 100%;
   /* height: 100vh; */
   background: #151f30;
-  padding: 3%;
+  padding: 50px 5%;
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
@@ -368,7 +368,7 @@ h4{
   padding-bottom: 0;
   margin-bottom: 0;
   color: #F2F3D9;
-  margin-left: 5%;
+  /* margin-left: 5%; */
 }
 #myServicesPage h3{
   margin-bottom: 2%;
