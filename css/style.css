@@ -204,41 +204,38 @@ a{
 }
 
 #intro{
-  padding: 3% 5% 0 5%;
+  padding: 18px 5% 0 5%;
   color: #F2F3D9;
   background: #151f30;
+  text-align: center;
 }
 #intro h2{
   padding: 30px 0;
   margin-bottom: 0;
   color: #dac074;
-  text-align: center;
 }
 #intro p{
   font-family: 'Mulish', sans-serif;
   font-style: normal;
   color: #F2F3D9;
   line-height: 35px;
-  padding: 0 150px 30px 150px;
+  padding: 0 200px 30px 200px;
   font-size: 2.0rem;
 }
 #intro div{
-  /* margin-left: 150px;
-  padding: 2% 0;
-   */
+
   width: 100%;
   display: flex;
   justify-content: center;
   padding-bottom: 25px;
 }
 #intro div a{
-  
   color: #F2F3D9;
   padding: 20px 70px;
   background: #1b304a;
   border: 1px solid #dac074;
   border-radius: 5px;
-  font-size: 2.0rem;
+  font-size: 1.8rem;
   font-family: 'Mulish', sans-serif;
   
 }
