@@ -430,7 +430,7 @@ h4{
 }
 
 #services{
-  padding: 0 15% 50px 15%;
+  padding: 30px 5% 50px 5%;
   background: #151f30;
   font-family: 'Mulish', sans-serif;
   font-style: normal;
@@ -583,9 +583,7 @@ footer span{
   top: -105px;
 }
 #myServicesAnim{
-  height: 400px;
   width: 40%;
-  margin-top: 150px;
   margin-left: 100px;
   position: relative;
 }
@@ -721,6 +719,8 @@ footer span{
   #myServicesAnim{
     margin-top: 0;
     margin-left: 0;
+    width: 450px;
+    /* padding-bottom: 20px; */
   }
   /* #projectButton{
     width: 100%;
@@ -761,8 +761,8 @@ footer span{
     padding-bottom: 5%;
   }
   #myServicesAnim{
-    height: 115px;
-    margin-bottom: 10%;
+    margin-top: 5%;
+    width: 350px;
   }
   #contactPage{
     flex-direction: column;
