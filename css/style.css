@@ -189,7 +189,7 @@ a{
   align-items: center;
   justify-content: center;
 }
-#contactForm > input, .mainButtons a{
+#contactForm > input, .mainButtons a, #intro div a{
   transition: background 0.2s linear, color 0.2s linear;
 }
 .mainButtons a:hover{
@@ -202,6 +202,53 @@ a{
   background: #151f30;
   /* margin-bottom: 20px; */
 }
+
+#intro{
+  padding: 3% 5% 0 5%;
+  color: #F2F3D9;
+  background: #151f30;
+}
+#intro h2{
+  padding: 30px 0;
+  margin-bottom: 0;
+  color: #dac074;
+  text-align: center;
+}
+#intro p{
+  font-family: 'Mulish', sans-serif;
+  font-style: normal;
+  color: #F2F3D9;
+  line-height: 35px;
+  padding: 0 150px 30px 150px;
+  font-size: 2.0rem;
+}
+#intro div{
+  /* margin-left: 150px;
+  padding: 2% 0;
+   */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 25px;
+}
+#intro div a{
+  
+  color: #F2F3D9;
+  padding: 20px 70px;
+  background: #1b304a;
+  border: 1px solid #dac074;
+  border-radius: 5px;
+  font-size: 2.0rem;
+  font-family: 'Mulish', sans-serif;
+  
+}
+#intro div a:hover{
+  background: #dac074;
+}
+/* #intro p:first-of-type{
+  margin-bottom: 30px;
+} */
+
 
 #about{
   padding: 0 50px;
@@ -617,6 +664,12 @@ footer span{
   #about h2{
     font-size: 2.5rem;
   }
+  #intro p{
+    padding: 0 70px 30px 70px;
+  }
+  /* #intro div{
+    padding: 40px 0 20px 0;
+  } */
   #myProjects{
     height: 100%;
   }
@@ -690,6 +743,9 @@ footer span{
   }
   #services span{
     margin-right: 8px;
+  }
+  #intro p{
+    padding: 0 30px 30px 30px;
   }
 }
 @media screen and (max-width: 540px) {
