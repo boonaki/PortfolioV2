@@ -347,9 +347,9 @@ a{
   color: #F2F3D9;
 }
 #recentProjects img{
-  height: 600px;
+  max-height: 669px;
   width: 100%;
-  /* object-fit: cover; */
+  /* object-fit: contain; */
   margin-bottom: 30px;
 }
 #recentProjects div{
