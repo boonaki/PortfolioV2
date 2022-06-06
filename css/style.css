@@ -694,10 +694,19 @@ footer span{
     height: 80%;
     justify-content: space-around;
     padding-right: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  #recentProjects > *{
+    width: 70%;
+    margin-bottom: 5%;
   }
   #about{
     flex-direction: column-reverse;
     padding: 15px 0;
+  }
+  #aboutMe{
+    padding-top: 20px;
   }
   #aboutText{
     padding-left: 0;
@@ -768,10 +777,10 @@ footer span{
   html{
     font-size: 45%;
   }
-  #recentProjects img{
+  /* #recentProjects img{
     height: 125px;
     width: 125px;
-  }
+  } */
   #services p{
     padding: 0;
     padding-bottom: 5%;
