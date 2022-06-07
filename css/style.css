@@ -326,7 +326,7 @@ a{
   border: 2px solid #dac074;
 }
 #recentProjects > * > .project{
-  padding: 25px 20px;
+  padding: 25px 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -781,6 +781,13 @@ footer span{
     height: 125px;
     width: 125px;
   } */
+  #recentProjects > * > .project{
+    padding: 20px 15px;
+  }
+  #recentProjects > *{
+    width: 85%;
+  }
+
   #services p{
     padding: 0;
     padding-bottom: 5%;
