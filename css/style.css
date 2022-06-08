@@ -129,7 +129,11 @@ h2{
   flex-direction: row;
   z-index: 1;
   margin-top: 100px;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
 }
+
+/* lottieanim at line 588 */
+
 #mainBoxText{
   display: flex;
   flex-direction: column;
@@ -586,6 +590,7 @@ footer span{
   width: 450px;
   position: absolute;
   top: -105px;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 #myServicesAnim{
   width: 40%;
@@ -862,6 +867,15 @@ footer span{
   }
 }
 
-
+@keyframes slideInFromLeft {
+  0% {
+    transform: translatey(20%);
+    opacity: 0%;
+  }
+  100% {
+    transform: translatey(0);
+    opacity: 100%;
+  }
+}
 
 
