@@ -173,7 +173,7 @@ a{
   font-style: italic;
 }
 #hero p{
-  /* padding: 0 25% 0 5%; */
+  padding: 0 10% 0 20px;
   /* text-align: left; */
   line-height: 40px;
 }
@@ -655,7 +655,7 @@ footer span{
   html{
     font-size: 58%;
   }
-  
+
   #contactForm > input{
     box-sizing: content-box;
     width: 100%;
@@ -707,7 +707,7 @@ footer span{
     align-items: center;
   }
   #recentProjects > *{
-    width: 70%;
+    width: 85%;
     margin-bottom: 5%;
   }
   #about{
