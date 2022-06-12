@@ -106,7 +106,7 @@ h1{
   font-weight: 800;
   font-size: 6.5rem;
   /* margin: 2% 0 5% 0; */
-  /* padding-left: 5%; */
+  padding-left: 5%;
   padding-right: 10%;
   text-align: left;
   word-spacing: -5px;
@@ -142,13 +142,13 @@ h2{
   text-align: left;
 }
 
-#mainBoxText h1, #mainBoxText h2, #mainBoxText p{
+/* #mainBoxText h1, #mainBoxText h2, #mainBoxText p{
   padding: 0 20px;
-}
+} */
 
 #mainBoxText h2{
   font-size: 3.0rem;
-  /* padding-left: 5%; */
+  padding-left: 5%;
 }
 .mainBox ul{
   display: flex;
@@ -173,7 +173,7 @@ a{
   font-style: italic;
 }
 #hero p{
-  padding: 0 10% 0 20px;
+  padding: 0 25% 0 5%;
   /* text-align: left; */
   line-height: 40px;
 }
@@ -671,6 +671,10 @@ footer span{
     width: 60%;
     flex-direction: column;
   }
+  #hero p{
+    padding-right: 10%;
+  }
+
   .mainBox ul{
     flex-direction: row;
     margin-bottom: 5%;
@@ -845,7 +849,7 @@ footer span{
   }
   .mainBox #mainBoxText p{
     font-size: 1.9rem;
-    line-height: 20px;
+    line-height: 25px;
     text-align: center;
   }
   .mainBox{
