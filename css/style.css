@@ -106,7 +106,7 @@ h1{
   font-weight: 800;
   font-size: 6.5rem;
   /* margin: 2% 0 5% 0; */
-  padding-left: 5%;
+  /* padding-left: 5%; */
   padding-right: 10%;
   text-align: left;
   word-spacing: -5px;
@@ -141,9 +141,14 @@ h2{
   justify-content: space-around;
   text-align: left;
 }
+
+#mainBoxText h1, #mainBoxText h2, #mainBoxText p{
+  padding: 0 20px;
+}
+
 #mainBoxText h2{
   font-size: 3.0rem;
-  padding-left: 5%;
+  /* padding-left: 5%; */
 }
 .mainBox ul{
   display: flex;
@@ -168,7 +173,7 @@ a{
   font-style: italic;
 }
 #hero p{
-  padding: 0 25% 0 5%;
+  /* padding: 0 25% 0 5%; */
   /* text-align: left; */
   line-height: 40px;
 }
@@ -556,7 +561,7 @@ textarea{
   font-weight: 300;
   font-style: italic;
   font-size: 1.8rem;
-  padding: 2% 0;
+  padding: 15px 0;
 }
 #contactForm > input:hover{
   background: #dac074;
@@ -650,9 +655,9 @@ footer span{
   html{
     font-size: 58%;
   }
-  #mainBoxText p{
+  /* #mainBoxText p{
     padding-right: 0;
-  }
+  } */
   #contactForm > input{
     box-sizing: content-box;
     width: 100%;
@@ -671,6 +676,7 @@ footer span{
   .mainBox ul{
     flex-direction: row;
     margin-bottom: 5%;
+    margin-left: 0;
   }
   h1{
     font-size: 5.0rem;
