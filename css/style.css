@@ -655,9 +655,7 @@ footer span{
   html{
     font-size: 58%;
   }
-  /* #mainBoxText p{
-    padding-right: 0;
-  } */
+  
   #contactForm > input{
     box-sizing: content-box;
     width: 100%;
