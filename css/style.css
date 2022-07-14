@@ -557,6 +557,7 @@ h5{
 textarea{
   width: auto;
 }
+
 #contactForm > input{
   color: #dac074;
   background: #151d2c;
@@ -699,9 +700,7 @@ footer span{
   #intro p:first-of-type {
     padding: 0 0 30px 0;
   }
-  /* #intro div{
-    padding: 40px 0 20px 0;
-  } */
+
   #myProjects{
     height: 100%;
   }
@@ -796,10 +795,7 @@ footer span{
   html{
     font-size: 45%;
   }
-  /* #recentProjects img{
-    height: 125px;
-    width: 125px;
-  } */
+
   #recentProjects > * > .project{
     padding: 20px 15px;
   }
