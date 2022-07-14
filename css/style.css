@@ -426,6 +426,9 @@ h4{
   padding-bottom: 5%;
   border-bottom: 1px solid #dac074;
 }
+#myServices > section:last-of-type{
+  border-bottom: none;
+}
 #myServices p{
   padding: 0 25% 0 0;
   color: #F2F3D9;
