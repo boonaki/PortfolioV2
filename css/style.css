@@ -130,6 +130,8 @@ h2{
   z-index: 1;
   margin-top: 100px;
   animation: 1s ease-out 0s 1 slideInFromLeft;
+  -webkit-animation: 1s ease-out 0s 1 slideInFromLeft;
+  -moz-animation: 1s ease-out 0s 1 slideInFromLeft
 }
 
 /* lottieanim at line 588 */
@@ -596,6 +598,8 @@ footer span{
   position: absolute;
   top: -105px;
   animation: 1s ease-out 0s 1 slideInFromLeft;
+  -webkit-animation: 1s ease-out 0s 1 slideInFromLeft;
+  -moz-animation: 1s ease-out 0s 1 slideInFromLeft
 }
 #myServicesAnim{
   width: 40%;
