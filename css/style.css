@@ -347,9 +347,37 @@ a{
   border-radius: 5px;
   height: 100%;
 }
+.devP{
+  height: 100px;
+  margin-bottom: 10px;
+}
 .projectP{
   color: #F2F3D9;
   font-size: 2.0rem;
+}
+#devProjectsContainer{
+  display: flex;
+
+}
+.devProject{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  padding: 10px 30px;
+  background: #1b304a;
+  border: 2px solid #dac074;
+  margin: 0 10px 30px 10px;
+}
+.devProject > div{
+  text-align: center;
+  padding: 0 5%;
+}
+.devGif{
+  width: 100%;
+  /* height: 400px; */
+  margin: 20px 0;
+  object-fit: contain;
 }
 
 #myProjects h2{
