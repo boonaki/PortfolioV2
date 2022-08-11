@@ -200,7 +200,7 @@ a{
   align-items: center;
   justify-content: center;
 }
-#contactForm > input, .mainButtons a, #intro div a{
+#contactForm > input, .mainButtons a, #buttonContainers div a{
   transition: background 0.2s linear, color 0.2s linear;
 }
 .mainButtons a:hover{
@@ -216,56 +216,60 @@ a{
 
 #intro{
   color: #F2F3D9;
-  /* background: #151f30; */
+  background: #151f30;
   text-align: center;
 }
-#introGif{
+/* #introGif{
   width: 100%;
   height: 60%;
   object-fit: fill;
   position: absolute;
   left: 0;
   z-index: -1;
-}
-#introInfo{
+} */
+#introInfo, #idx_introInfo{
   width: 60%;
   margin: 0 20%;
-  padding: 40px 0;
-  background: #00000087;
+  padding: 40px 0 20px 0;
+  /* background: #00000087; */
 }
 #intro h2{
   padding-top: 0;
   margin-bottom: 0;
   color: #ffffff;
 }
+#idx_introInfo h2{
+  font-size: 4.2rem;
+}
 #intro p{
   font-family: 'Mulish', sans-serif;
   font-style: normal;
   color: #e3e3e3;
   line-height: 35px;
-  padding: 0 40px 30px 40px;
+  padding: 0 40px 50px 40px;
   font-size: 2.0rem;
+}
+#buttonContainers{
+  display: flex;
+  justify-content: space-evenly;
 }
 /* #intro p:first-of-type{
   padding: 0 10% 30px 10%;
 } */
-#intro div{
+/* #buttonContainers div{
   width: 100%;
-  display: flex;
-  justify-content: center;
- 
-}
-#intro div a{
+} */
+#buttonContainers div a{
   color: #F2F3D9;
   padding: 20px 70px;
   /* background: #1b304a; */
   border: 1px solid #dac074;
-  border-radius: 45px;
+  border-radius: 10px;
   font-size: 1.8rem;
   font-family: 'Roboto', sans-serif;
   
 }
-#intro div a:hover{
+#buttonContainers div a:hover{
   background: #dac074;
 }
 /* #intro p:first-of-type{
@@ -321,7 +325,7 @@ a{
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
-  padding: 3% 5% 0 5%;
+  padding: 5% 5% 0 5%;
   justify-content: flex-start;
 }
 #projectButton{
@@ -384,9 +388,19 @@ a{
   border: 2px solid #dac074;
   /* margin: 0 10px 20px 10px; */
 }
-.devProject > div{
+.devProjectInfo{
   text-align: center;
   padding: 0 5%;
+}
+.devProjectInfo span{
+  font-size: 20px;
+  color: white;
+  font-family: "Mulish", sans-serif;
+}
+.devProjectInfo a{
+  color: #F2F3D9;
+  text-decoration: underline;
+  font-size: 20px;
 }
 .devGif{
   width: 100%;
@@ -739,12 +753,25 @@ footer span{
   #about h2{
     font-size: 2.5rem;
   }
+  #introInfo, #idx_introInfo{
+    width: 84%;
+    margin: 0 8%;
+  }
   #intro p{
     padding: 0 50px 30px 50px;
   }
   
   #intro p:first-of-type {
     padding: 0 0 30px 0;
+  }
+  #devProjectsContainer{
+    flex-direction: column;
+  }
+  .devProject:first-of-type{
+    margin-bottom: 30px;
+  }
+  .devProject{
+    width: 100%;
   }
 
   #myProjects{
@@ -753,10 +780,12 @@ footer span{
   #passionProject{
     display: none;
   }
+  #devProjectsContainer{
+    margin-bottom: 5%;
+  }
   #recentProjects{
     width: 100%;
-    height: 80%;
-    justify-content: space-around;
+    /* margin-top: 40px; */
     padding-right: 0;
     flex-direction: column;
     align-items: center;
@@ -823,6 +852,9 @@ footer span{
   html{
     font-size: 54%;
   }
+  h3,h4{
+    font-size: 3.5rem;
+  }
   .mainBox{
     width: 80%;
   }
@@ -836,12 +868,23 @@ footer span{
     padding: 0 0 30px 0;
     font-size: 2.3rem;
   }
+  #buttonContainers .connectButton{
+    padding: 20px 35px;
+  }
 }
 @media screen and (max-width: 540px) {
   html{
     font-size: 45%;
   }
-
+  #myProjects{
+    padding-top: 10%;
+  }
+  .devGif{
+    width: 107%;
+  }
+  #buttonContainers .connectButton{
+    padding: 15px;
+  }
   #recentProjects > * > .project{
     padding: 20px 15px;
   }
