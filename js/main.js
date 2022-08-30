@@ -11,5 +11,16 @@ let animation = bodymovin.loadAnimation({
     renderer: 'svg',
     loop: true,
     autoplay: true,
+    rendererSettings: {
+        id: 'svg2',
+    },
     path: 'https://assets7.lottiefiles.com/packages/lf20_exfaib4n.json' // lottie file path
   })
+
+// animation2.setAttribute('id', 'svg2')
+grabWindowHeight()
+
+function grabWindowHeight(){
+    let hero = document.querySelector('#hero')
+    hero.style.height = window.innerHeight + 'px'
+}

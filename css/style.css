@@ -87,11 +87,11 @@ html{
 /* BASE STYLES
 /*******************************************/
 main, body{
-  /* background: #151d2c; */
+  background: #151d2c;
   height: 100%;
 }
 #hero{
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
   background: linear-gradient(to bottom left, #011968, #0c285c, #0d3166, #234c81, #4374a1, #dac074);
   color: #F2F3D9;
@@ -236,7 +236,7 @@ a{
 #intro h2{
   padding-top: 0;
   margin-bottom: 0;
-  color: #ffffff;
+  color: #F2F3D9;
 }
 #idx_introInfo h2{
   font-size: 4.2rem;
@@ -244,7 +244,7 @@ a{
 #intro p{
   font-family: 'Mulish', sans-serif;
   font-style: normal;
-  color: #e3e3e3;
+  color: #F2F3D9;
   line-height: 35px;
   padding: 0 40px 50px 40px;
   font-size: 2.0rem;
@@ -666,6 +666,12 @@ footer span{
   margin-left: 100px;
   position: relative;
 }
+#svg2{
+    height: 475px!important;
+    position: sticky!important;
+    position: -webkit-sticky!important;
+    top: 0!important;
+}
 
 /******************************************
 /* ADDITIONAL STYLES
@@ -820,7 +826,12 @@ footer span{
   #myServices{
     width: 100%;
     padding-left: 0;
+    padding: 0 5%;
     margin-top: 5%;
+  }
+  #svg2{
+    height: 100%!important;
+    position: static!important;
   }
   #myServices > *{
     width: 100%;
@@ -871,6 +882,10 @@ footer span{
   #buttonContainers .connectButton{
     padding: 20px 35px;
   }
+  #animContainer{
+    height: 515px;
+    width: 515px;
+  }
 }
 @media screen and (max-width: 540px) {
   html{
@@ -882,9 +897,12 @@ footer span{
   .devGif{
     width: 107%;
   }
-  #buttonContainers .connectButton{
-    padding: 15px;
+  #hero p{
+    line-height: 33px;
   }
+  /* #buttonContainers .connectButton{
+    padding: 15px;
+  } */
   #recentProjects > * > .project{
     padding: 20px 15px;
   }
