@@ -69,10 +69,10 @@
 #hero .icon:hover{
   color: #dac074;
 }
-#projectButton, #recentProjects > *{
+#projectButton, .recentProjects > *{
   transition: background 0.2s linear;
 }
-#projectButton:hover, #recentProjects > *:hover{
+#projectButton:hover, .recentProjects > *:hover{
   background: #dac074;
 }
 
@@ -209,7 +209,7 @@ a{
 }
 
 #aboutMe{
-  padding: 50px 5% 0 5%;
+  padding: 50px 5% 5% 5%;
   background: #151f30;
   /* margin-bottom: 20px; */
 }
@@ -227,20 +227,6 @@ a{
   left: 0;
   z-index: -1;
 } */
-#introInfo, #idx_introInfo{
-  width: 60%;
-  margin: 0 20%;
-  padding: 40px 0 20px 0;
-  /* background: #00000087; */
-}
-#intro h2{
-  padding-top: 0;
-  margin-bottom: 0;
-  color: #F2F3D9;
-}
-#idx_introInfo h2{
-  font-size: 4.2rem;
-}
 #intro p{
   font-family: 'Mulish', sans-serif;
   font-style: normal;
@@ -249,6 +235,38 @@ a{
   padding: 0 40px 50px 40px;
   font-size: 2.0rem;
 }
+#idx_introInfo{
+  width: 80%;
+  margin: 0 10%;
+  padding: 40px 0 20px 0;
+  /* background: #00000087; */
+}
+#introInfo{
+    padding: 40px 0 20px 0;
+}
+#introInfo h2{
+    text-align: left;
+    margin-left: 5%;
+    width: auto;
+}
+
+#intro #introInfo p{
+    font-size: 3.0rem;
+    line-height: 50px;
+    padding: 10px;
+    width: 80%;
+    text-align: center;
+    margin: 0 10% 50px 10%;
+}
+
+#intro h2{
+  padding-top: 0;
+  margin-bottom: 0;
+  color: #F2F3D9;
+}
+/* #idx_introInfo h2{
+  font-size: 4.2rem;
+} */
 #buttonContainers{
   display: flex;
   justify-content: space-evenly;
@@ -277,12 +295,19 @@ a{
 } */
 
 
-#about{
-  padding: 0 50px;
+#about, #idx_about{
   display: flex;
   flex-direction: row;
   align-items: center;
 }
+
+#about{
+    padding: 0 50px;
+}
+#idx_about{
+    padding: 0 50px 50px 50px;
+}
+
 #headshotPic{
   object-fit: cover;
   height: 400px;
@@ -341,19 +366,19 @@ a{
   font-family: 'Mulish', 'sans-serif'; */
   display: none;
 }
-#recentProjects{
+.recentProjects{
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-#recentProjects > *{
+.recentProjects > *{
   width: 32%;
   background: #1b304a;
   border: 2px solid #dac074;
   border-radius: 10px;
 }
-#recentProjects > * > .project{
+.recentProjects > * > .project{
   padding: 25px 30px;
   display: flex;
   flex-direction: column;
@@ -366,16 +391,16 @@ a{
 }
 .devP{
   height: 100px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 .projectP{
   color: #F2F3D9;
   font-size: 2.0rem;
 }
-#devProjectsContainer{
+.devProjectsContainer{
   display: flex;
   justify-content: space-between;
-  margin-bottom: 2%;
+  margin: 2% 0;
 }
 .devProject{
   display: flex;
@@ -386,6 +411,8 @@ a{
   padding: 10px 30px;
   background: #1b304a;
   border: 2px solid #dac074;
+  justify-content: space-around;
+  /* height: 555px; */
   /* margin: 0 10px 20px 10px; */
 }
 .devProjectInfo{
@@ -417,14 +444,14 @@ a{
   padding-bottom: 0;
   color: #F2F3D9;
 }
-#recentProjects img{
+.recentProjects img{
   max-height: 669px;
   width: 100%;
   /* object-fit: contain; */
   margin-bottom: 30px;
 }
-#recentProjects div{
-  padding: 5%;
+.recentProjects div{
+  padding: 5% 0;
   text-align: center;
 }
 h3, h4{
@@ -737,8 +764,11 @@ footer span{
     width: 100%;
     height: 100%;
   }
+  #intro p:first-of-type{
+    padding: 0 0 10px 0;
+  }
   #intro p{
-    padding: 0 70px 30px 70px;
+    padding: 0 30px 30px 30px;
   }
 }
 @media screen and (max-width: 1085px) {
@@ -787,18 +817,21 @@ footer span{
   #passionProject{
     display: none;
   }
-  #devProjectsContainer{
+  .devProjectInfo h3{
+    margin-bottom: 10px;
+  }
+  .devProjectsContainer{
     margin-bottom: 5%;
     flex-direction: column;
   }
-  #recentProjects{
+  .recentProjects{
     width: 100%;
     /* margin-top: 40px; */
     padding-right: 0;
     flex-direction: column;
     align-items: center;
   }
-  #recentProjects > *{
+  .recentProjects > *{
     width: 85%;
     margin-bottom: 5%;
   }
@@ -909,10 +942,10 @@ footer span{
   /* #buttonContainers .connectButton{
     padding: 15px;
   } */
-  #recentProjects > * > .project{
+  .recentProjects > * > .project{
     padding: 20px 15px;
   }
-  #recentProjects > *{
+  .recentProjects > *{
     width: 85%;
   }
   .devProjectInfo h3{
