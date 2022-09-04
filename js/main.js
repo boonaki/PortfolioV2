@@ -18,9 +18,9 @@ let animation = bodymovin.loadAnimation({
   })
 
 // animation2.setAttribute('id', 'svg2')
-grabWindowHeight()
+// grabWindowHeight()
 
-function grabWindowHeight(){
-    let hero = document.querySelector('#hero')
-    hero.style.height = window.innerHeight + 'px'
-}
+// function grabWindowHeight(){
+//     let hero = document.querySelector('#hero')
+//     hero.style.height = window.innerHeight + 'px'
+// }
