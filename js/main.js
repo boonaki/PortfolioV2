@@ -18,9 +18,11 @@ let animation = bodymovin.loadAnimation({
   })
 
 // animation2.setAttribute('id', 'svg2')
-// grabWindowHeight()
+grabWindowHeight()
 
-// function grabWindowHeight(){
-//     let hero = document.querySelector('#hero')
-//     hero.style.height = window.innerHeight + 'px'
-// }
+function grabWindowHeight(){
+    if(window.innerWidth > 1023){
+        let hero = document.querySelector('#hero')
+        hero.style.height = window.innerHeight + 'px'
+    }
+}

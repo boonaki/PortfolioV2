@@ -42,7 +42,7 @@
 }
 
 /******************************************
-/* BASE STYLES
+/* BASE/OVERLAPPING STYLES
 /*******************************************/
 html {
     font-size: 62.5%;
@@ -101,7 +101,8 @@ h2 {
     margin-top: 30px;
     animation: 1s ease-out 0s 1 slideInFromLeft;
     -webkit-animation: 1s ease-out 0s 1 slideInFromLeft;
-    -moz-animation: 1s ease-out 0s 1 slideInFromLeft
+    -moz-animation: 1s ease-out 0s 1 slideInFromLeft;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 #mainBoxText h1 {
@@ -148,6 +149,12 @@ h2 {
     border-radius: 10px;
     text-align: center;
     margin: 10px 0;
+    transition: background .15s ease-in-out, color .10s ease-in-out;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.mainButtons a:hover{
+    background: #dac074;
+    color: #F2F3D9;
 }
 
 .mainBox ul {
@@ -164,7 +171,7 @@ h2 {
     justify-content: space-around;
 }
 
-#introInfo p {
+#introInfo p, #idx_introInfo p{
     font-family: 'Mulish', sans-serif;
     font-style: normal;
     color: #F2F3D9;
@@ -180,6 +187,12 @@ h2 {
     border: 2px solid #dac074;
     border-radius: 10px;
     font-family: 'Roboto', sans-serif;
+    transition: background .2s ease-out, box-shadow .1s ease-in;
+    
+}
+.connectButton:hover{
+    background: #dac074;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 /*** PROJECTS ***/
@@ -197,6 +210,11 @@ h2 {
     border-radius: 10px;
     width: 90%;
     margin: 10px;
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
 }
 
 .recentProjects img {
@@ -524,8 +542,9 @@ h5 {
     #idx_intro .connectButton{
         padding: 20px 20%;
     }
-    #introInfo p{
+    #introInfo p, #idx_introInfo p{
         padding: 0 15%;
+        margin-bottom: 35px;
     }
     .recentProjects img{
         object-fit: cover;
@@ -536,6 +555,93 @@ h5 {
     }
 }
 
-@media (min-width: 980px){
+@media (min-width: 1024px){
+    html{
+        font-size: 71%;
+    }
+    h2{
+        margin-top: 30px;
+    }
+    #animContainer{
+        height: 585px;
+        top: -118px;
+    }
+    .mainBox{
+        width: 700px;
+        flex-direction: row;
+        padding-right: 18px;
+        padding-left: 30px;
+        margin-top: 175px;
+    }
+    .mainBox ul{
+        flex-direction: column;
+    }
+    #links{
+        width: 10%;
+    }
+    .icon{
+        height: 52px;
+        width: 52px;
+    }
+    #mainBoxText{
+        width: 100%;
+    }
+    #mainBoxText h1{
+        font-size: 5.1rem;
+        line-height: 55px;
+        margin-bottom: 25px;
+        margin-top: 15px;
+        padding-left: 2%;
+    }
+    #mainBoxText p{
+        padding-right: 9%;
+        line-height: 35px;
+        margin-bottom: 23px;
+        padding-left: 2%;
+    }
+    #mainBoxText h2{
+        padding-right: 5%;
+        font-size: 3.2rem;
+        margin-bottom: 20px;
+        padding-left: 2%;
+        line-height: 40px;
+    }
+    .mainButtons{
+        flex-direction: row;
+
+        margin: 10px 10px 10px 0;
+    }
+    .mainButtons a{
+        padding: 4% 33px;
+        margin-right: 10px;
+        font-size: 1.7rem;
+    }
+
+    #idx_introInfo p:first-of-type{
+        padding: 0 10%;
+    }
+    #introInfo p{
+        margin: 5% 0;
+        font-size: 2.8rem;
+    }
+    #intro .connectButton{
+        padding: 21px 9%;
+    }
+    #myProjects h2{
+        margin-bottom: 10px;
+    }
+
+    .recentProjects{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .recentProjects>section{
+        width: 30%;
+    }
+    .recentProjects img{
+        height: 100%;
+        object-fit: contain;
+    }
+
 
 }
