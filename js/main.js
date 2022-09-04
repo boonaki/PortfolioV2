@@ -21,6 +21,8 @@ let animation = bodymovin.loadAnimation({
 grabWindowHeight()
 
 function grabWindowHeight(){
-    let hero = document.querySelector('#hero')
-    hero.style.height = window.innerHeight + 'px'
+    if(window.innerWidth > 1023){
+        let hero = document.querySelector('#hero')
+        hero.style.height = window.innerHeight + 'px'
+    }
 }
