@@ -186,13 +186,14 @@ h2 {
     font-size: 1.5rem;
     border: 2px solid #dac074;
     border-radius: 10px;
-    font-family: 'Roboto', sans-serif;
-    transition: background .2s ease-out, box-shadow .1s ease-in;
+    font-family: 'Mulish', 'sans-serif';
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: background .2s ease-out;
     
 }
 .connectButton:hover{
     background: #dac074;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 /*** PROJECTS ***/
@@ -210,8 +211,11 @@ h2 {
     border-radius: 10px;
     width: 90%;
     margin: 10px;
+    transition: background .10s ease-in-out;
 }
-
+.recentProjects>section:hover{
+    background: #dac074;
+}
 .project{
     display: flex;
     flex-direction: column;
@@ -384,12 +388,19 @@ footer {
     color: #F2F3D9;
     border: 2px solid #dac074;
     border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: background .2s ease-out;
+}
+#projectButton:hover{
+    background: #dac074;
+    
 }
 
 #projectBContainer {
     padding-left: 5%;
     margin: 8% 0;
 }
+
 
 #myServicesContainer {
     width: 100%;
@@ -507,6 +518,10 @@ h5 {
     font-family: 'Mulish', sans-serif;
     font-size: 2.0rem;
     text-decoration: underline;
+    transition: color .12s ease-out;
+}
+.devProjectInfo a:hover{
+    color: #dac074;
 }
 
 /******************************************
@@ -564,14 +579,14 @@ h5 {
     }
     #animContainer{
         height: 585px;
-        top: -118px;
+        top: -135px;
     }
     .mainBox{
         width: 700px;
         flex-direction: row;
         padding-right: 18px;
         padding-left: 30px;
-        margin-top: 175px;
+        margin-top: 123px;
     }
     .mainBox ul{
         flex-direction: column;
@@ -587,24 +602,25 @@ h5 {
         width: 100%;
     }
     #mainBoxText h1{
-        font-size: 5.1rem;
-        line-height: 55px;
+        font-size: 5.5rem;
+        line-height: 65px;
         margin-bottom: 25px;
         margin-top: 15px;
         padding-left: 2%;
     }
     #mainBoxText p{
         padding-right: 9%;
-        line-height: 35px;
+        line-height: 38px;
         margin-bottom: 23px;
         padding-left: 2%;
+        font-size: 2.1rem;
     }
     #mainBoxText h2{
         padding-right: 5%;
         font-size: 3.2rem;
         margin-bottom: 20px;
         padding-left: 2%;
-        line-height: 40px;
+        line-height: 44px;
     }
     .mainButtons{
         flex-direction: row;
@@ -612,7 +628,7 @@ h5 {
         margin: 10px 10px 10px 0;
     }
     .mainButtons a{
-        padding: 4% 33px;
+        padding: 4% 60px;
         margin-right: 10px;
         font-size: 1.7rem;
     }
@@ -634,14 +650,140 @@ h5 {
     .recentProjects{
         flex-direction: row;
         justify-content: space-evenly;
+        align-items: normal;
     }
     .recentProjects>section{
-        width: 30%;
+        width: 31%;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     }
+    /* .project{
+        background: #1b304a;
+        border: 2px solid #dac074;
+        border-radius: 10px;
+        width: 100%;
+        margin: 10px;
+    } */
+
     .recentProjects img{
         height: 100%;
+        max-height: 720px;
         object-fit: contain;
+        /* padding: 0; */
+        margin-bottom: 10px;
+    }
+    .projectText{
+        /* height: 140px; */
+        padding: 5% 0;
     }
 
+    #devProjectsContainer{
+        flex-direction: row;
+        align-items: normal;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 6px;
+    }
+    .devProject{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 48%;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+    .devGif{
+        height: none;
+        width: 92%;
+    }
 
+    #projectBContainer{
+        margin: 2% 0;
+        padding: 10px 5%;
+    }
+    #projectButton{
+        padding: 20px 100px;
+    }
+
+    #about{
+        flex-direction: row;
+    }
+    #headshot{
+        margin-left: 5%;
+    }
+    #headshot #headshotPic{
+        width: 365px;
+        height: 365px;
+    }
+
+    #myServicesContainer{
+        flex-wrap: nowrap;
+    }
+    #myServicesAnim{
+        width: 90%;
+    }
+    #myServicesAnim svg{
+        width: 90%!important;
+        margin: 0;
+        position: sticky!important;
+        position: -webkit-sticky!important;
+        top: 0!important;
+        height: 350px!important;
+    }
+    #myServices{
+        padding: 0 10%;
+    }
+    #myServices>*, #myServices p{
+        text-align: start;
+        line-height: 32px;
+    }
+
+    #services h2{
+        padding: 0 200px;
+        font-size: 2.5rem;
+        line-height: 40px;
+        margin-bottom: 50px;
+    }
+    h5{
+        font-size: 3.7rem;
+    }
+    #services p{
+        font-size: 2.2rem;
+        line-height: 40px;
+        padding: 0 0 30px 0;
+        width: 695px;
+    }
+    .serviceIcon{
+        height: 45px;
+        width: 45px;
+        margin-right: 15px;
+    }
+    #serviceText{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    #contact{
+        width: 600px;
+        padding: 45px;
+        margin: 60px 0;
+    }
+    #contactForm>*>*{
+        width: 100%;
+    }
+    footer{
+        font-size: 2.0rem;
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translatey(20%);
+        opacity: 0%;
+    }
+
+    100% {
+        transform: translatey(0);
+        opacity: 100%;
+    }
 }
