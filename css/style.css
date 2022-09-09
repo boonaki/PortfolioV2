@@ -87,6 +87,9 @@ h2 {
     width: 100%;
     position: absolute;
     top: -85px;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+    -webkit-animation: 1s ease-out 0s 1 slideInFromLeft;
+    -moz-animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 
 .mainBox {
