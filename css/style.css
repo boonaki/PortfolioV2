@@ -654,6 +654,7 @@ h5 {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: normal;
+        padding: 0 5%;
     }
     .recentProjects>section{
         width: 31%;
@@ -685,6 +686,7 @@ h5 {
         justify-content: center;
         flex-wrap: wrap;
         margin-bottom: 6px;
+        padding: 0 5%;
     }
     .devProject{
         display: flex;
