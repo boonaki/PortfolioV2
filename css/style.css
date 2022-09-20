@@ -143,7 +143,7 @@ h2 {
 
 .mainButtons a {
     color: #dac074;
-    padding: 3%;
+    padding: 5%;
     font-size: 1.5rem;
     font-weight: 300;
     font-family: 'Raleway', sans-serif;
@@ -172,6 +172,7 @@ h2 {
 #buttonContainers {
     display: flex;
     justify-content: space-around;
+    padding-bottom: 25px;
 }
 
 #introInfo p, #idx_introInfo p{
@@ -245,11 +246,10 @@ h3 {
 }
 
 .projectP {
-    font-size: 1.8rem;
-    font-family: 'Raleway', 'sans-serif';
-    font-weight: 300;
-    font-style: italic;
-    padding: 0 5% 5% 5%;
+    font-size: 1.7rem;
+    font-family: 'Mulish', 'sans-serif';
+    font-weight: 800;
+    padding: 10px 5% 5% 5%;
     color: #F2F3D9;
 }
 .techs{
@@ -527,11 +527,16 @@ h5 {
     color: #F2F3D9;
     font-family: 'Mulish', sans-serif;
     font-size: 2.0rem;
-    text-decoration: underline;
     transition: color .12s ease-out;
 }
 .devProjectInfo a:hover{
     color: #dac074;
+}
+.projLinks{
+    border-bottom: 1px dashed #F2F3D9;
+}
+.divider{
+    padding: 0 5px;
 }
 
 /******************************************
@@ -647,8 +652,11 @@ h5 {
         padding: 0 10%;
     }
     #introInfo p{
-        margin: 5% 0;
+        margin: 5% 0 3% 0;
         font-size: 2.8rem;
+    }
+    #buttonContainers{
+        padding: 0 10% 25px 10%;
     }
     #intro .connectButton{
         padding: 21px 9%;
