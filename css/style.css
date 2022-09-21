@@ -656,9 +656,22 @@ h5 {
         margin-right: 10px;
         font-size: 1.7rem;
     }
+    #intro{
+        display: flex;
+        justify-content: center;
+        padding-right: 10%;
+        height: 350px;
+    }
     #intro p{
-        margin: 80px 0;
+        margin: 0;
         font-size: 2.5rem;
+        text-align: left;
+        padding: 0 5% 0 0;
+    }
+    #introInfo{
+        width: 50%;
+        display: flex;
+        align-items: center;
     }
     #idx_introInfo p{
         padding: 0 20% 0 10%;
@@ -666,12 +679,19 @@ h5 {
         font-size: 1.8rem;
         line-height: 30px;
     }
+    #intro #buttonContainers{
+        flex-direction: column;
+        padding: 0;
+        width: 290px;
+        margin-left: 75px;
+    }
     #idx_introInfo #buttonContainers{
         padding: 0 10% 25px 10%;
         justify-content: flex-start;
     }
     #intro .connectButton{
         padding: 20px 7%;
+        text-align: center;
     }
     #idx_intro .connectButton{
         padding: 15px 10%;
