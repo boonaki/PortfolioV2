@@ -648,18 +648,21 @@ h5 {
         font-size: 1.7rem;
     }
 
-    #idx_introInfo p:first-of-type{
-        padding: 0 10%;
-    }
-    #introInfo p{
-        margin: 5% 0 3% 0;
-        font-size: 2.8rem;
+    #idx_introInfo p, #introInfo p{
+        padding: 0 20% 0 10%;
+        text-align: left;
+        font-size: 1.8rem;
+        line-height: 30px;
     }
     #buttonContainers{
         padding: 0 10% 25px 10%;
+        justify-content: flex-start;
     }
     #intro .connectButton{
         padding: 21px 9%;
+    }
+    #idx_intro .connectButton{
+        padding: 15px 10%;
     }
     #myProjects h2{
         margin-bottom: 10px;
@@ -727,8 +730,14 @@ h5 {
     #about{
         flex-direction: row;
     }
+    #aboutText p{
+        padding: 10px 10% 10px 0;
+    }
+    #aboutText h3{
+        padding-right: 10%;
+    }
     #headshot{
-        margin-left: 5%;
+        margin-left: 10%;
     }
     #headshot #headshotPic{
         width: 365px;
