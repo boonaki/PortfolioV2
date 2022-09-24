@@ -26,3 +26,11 @@ function grabWindowHeight(){
         hero.style.height = window.innerHeight + 'px'
     }
 }
+
+function scrollToIntro(){
+    document.querySelector("#the-intro").scrollIntoView(true)
+}
+
+function scrollToProjects(){
+    document.querySelector('#myProjects').scrollIntoView(true)
+}

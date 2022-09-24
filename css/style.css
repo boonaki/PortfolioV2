@@ -46,6 +46,7 @@
 /*******************************************/
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -141,9 +142,9 @@ h2 {
     margin: 10px 0;
 }
 
-.mainButtons a {
+.mainButtons > * {
     color: #dac074;
-    padding: 5%;
+    padding: 13px 0;
     font-size: 1.5rem;
     font-weight: 300;
     font-family: 'Raleway', sans-serif;
@@ -155,7 +156,7 @@ h2 {
     transition: background .15s ease-in-out, color .10s ease-in-out;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-.mainButtons a:hover{
+.mainButtons > *:hover{
     background: #dac074;
     color: #F2F3D9;
 }
@@ -175,32 +176,40 @@ h2 {
     padding-bottom: 25px;
 }
 
+#idx_introInfo{
+    padding-top: 15px;
+}
+
 #introInfo p, #idx_introInfo p{
     font-family: 'Mulish', sans-serif;
     font-style: normal;
     color: #F2F3D9;
-    padding: 0 5%;
-    font-size: 2.0rem;
+    padding: 0 10%;
+    font-size: 1.8rem;
     text-align: center;
     margin: 20px 0;
 }
 #introInfo p{
     margin: 50px 0;
 }
+#break{
+    font-weight: bold;
+}
 
 .connectButton {
     color: #F2F3D9;
     font-size: 1.5rem;
-    border: 2px solid #dac074;
+    border: 2px solid #767369;
     border-radius: 10px;
     font-family: 'Mulish', 'sans-serif';
     /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    transition: background .2s ease-out;
+    transition: background .2s ease-out, border .2s ease-out;
     
 }
 .connectButton:hover{
     background: #dac074;
+    border: 2px solid #dac074;
 }
 
 /*** PROJECTS ***/
@@ -226,12 +235,13 @@ h2 {
 .project{
     display: flex;
     flex-direction: column;
+    padding-bottom: 5%;
 }
 
 .recentProjects img {
     max-height: 669px;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
     /* margin-bottom: 30px; */
     padding: 20px;
 }
@@ -251,7 +261,7 @@ h3 {
 .projectP {
     font-size: 1.7rem;
     font-family: 'Mulish', 'sans-serif';
-    font-weight: 800;
+    font-weight: 400;
     padding: 10px 5% 5% 5%;
     color: #F2F3D9;
 }
@@ -390,7 +400,7 @@ footer {
 /* PAGE 1 STYLES
 /*******************************************/
 
-#idx_intro .connectButton {
+#the-intro .connectButton {
     padding: 15px 20%;
 }
 
@@ -572,7 +582,7 @@ h5 {
     .mainBox{
         padding: 25px;
     }
-    #idx_intro .connectButton{
+    #the-intro .connectButton{
         padding: 20px 20%;
     }
     #introInfo p, #idx_introInfo p{
@@ -651,7 +661,7 @@ h5 {
 
         margin: 10px 10px 10px 0;
     }
-    .mainButtons a{
+    .mainButtons > *{
         padding: 4% 60px;
         margin-right: 10px;
         font-size: 1.7rem;
@@ -693,7 +703,7 @@ h5 {
         padding: 20px 7%;
         text-align: center;
     }
-    #idx_intro .connectButton{
+    #the-intro .connectButton{
         padding: 15px 10%;
     }
     #myProjects h2{
@@ -719,10 +729,7 @@ h5 {
     } */
 
     .recentProjects img{
-        /* height: 100%; */
-        /* max-height: 720px; */
-        /* object-fit: contain; */
-        /* padding: 0; */
+        height: 500px;
         margin-bottom: 10px;
     }
     .projectText{
@@ -750,7 +757,9 @@ h5 {
         height: none;
         width: 92%;
     }
-
+    .project{
+        padding: 0;
+    }
     #projectBContainer{
         margin: 2% 0;
         padding: 10px 5%;
