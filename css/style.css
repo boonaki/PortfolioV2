@@ -712,12 +712,12 @@ h5 {
 
     .recentProjects{
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: normal;
         padding: 0 5%;
     }
     .recentProjects>section{
-        width: 31%;
+        width: 425px;
         box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     }
     /* .project{
@@ -734,7 +734,7 @@ h5 {
     }
     .projectText{
         /* height: 140px; */
-        padding: 5% 0;
+        padding: 3px 0 10px 0;
     }
 
     #devProjectsContainer{
@@ -763,6 +763,8 @@ h5 {
     #projectBContainer{
         margin: 2% 0;
         padding: 10px 5%;
+        display: flex;
+        justify-content: center;
     }
     #projectButton{
         padding: 20px 100px;
