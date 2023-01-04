@@ -192,6 +192,9 @@ h2 {
 #introInfo p{
     margin: 50px 0;
 }
+.bold{
+    font-weight: bold;
+}
 #break{
     font-weight: bold;
 }
@@ -525,7 +528,7 @@ h5 {
 }
 
 .devProjectInfo {
-    padding-bottom: 10px;
+    padding-bottom: 17.5px;
 }
 
 .devGif {
