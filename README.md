@@ -14,8 +14,8 @@ This project was my first attempt at a mobile-first approach, rather than using 
 ## Some more:
 Take a look at the repos of projects that I have in my own portfolio:
 
-**Just-teas:** https://github.com/boonaki/just-teas
+**Progressio:** https://github.com/boonaki/progressio
 
-**MCMPDB:** https://github.com/boonaki/mc-modpackdb
+**Binary-upload-react:** https://github.com/boonaki/binary-upload-react
 
 **Square-Tag:** https://github.com/boonaki/squaretag
